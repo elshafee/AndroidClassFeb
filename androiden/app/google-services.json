@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "616076012712",
+    "firebase_url": "https://classwin-d7a44-default-rtdb.firebaseio.com",
+    "project_id": "classwin-d7a44",
+    "storage_bucket": "classwin-d7a44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616076012712:android:caac52b398e396d4ace69d",
+        "android_client_info": {
+          "package_name": "com.elshafee.androiden"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616076012712-c346mfaeota1cket0hahgn1pldokfmj0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elshafee.androiden",
+            "certificate_hash": "f0d030e0d19f020abdc40c4cbf8e85e6b1030d78"
+          }
+        },
+        {
+          "client_id": "616076012712-qt7a1kci3t4ntfhhfipe1cfo7upv3f2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxSx1uKTdqmGNAUccWq7HY0hxMGcVP91M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616076012712-qt7a1kci3t4ntfhhfipe1cfo7upv3f2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
