@@ -4,10 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.elshafee.androiden.HomeScreen
 import com.elshafee.androiden.MainActivity
 import com.elshafee.androiden.auth.LoginScreen
 import com.elshafee.androiden.databinding.ActivitySplashScreenBinding
-import com.elshafee.androiden.todlistapp.TodoListActivity
+import com.elshafee.androiden.auth.todlistapp.TodoListActivity
 
 class SplashScreen : AppCompatActivity() {
     lateinit var binding:ActivitySplashScreenBinding
@@ -21,7 +22,7 @@ class SplashScreen : AppCompatActivity() {
         Handler().postDelayed({
 
             if (isSigned){
-                val intent = Intent(this, TodoListActivity::class.java)
+                val intent = Intent(this, HomeScreen::class.java)
                 startActivity(intent)
                 finish()
             }else{

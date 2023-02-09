@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/TodoListApp"
+        android:title="TodoList app"
+        android:icon="@drawable/todolist"
+
+        />
+    <item
+        android:id="@+id/ourEvent"
+        android:title="Our Events"
+        android:icon="@drawable/ourevents"
+        />
+    <item
+        android:id="@+id/myEmail"
+        android:title="My Email"
+        android:icon="@drawable/email"
+        />
+    <item
+        android:id="@+id/courotineExaple"
+        android:title="Coroutine Example"
+        android:icon="@drawable/logout"
+        />
+    <item
+        android:id="@+id/logout"
+        android:title="SignOut"
+        android:icon="@drawable/logout"
+        />
+</menu>

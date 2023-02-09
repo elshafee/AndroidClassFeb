@@ -27,6 +27,7 @@ class LoginScreen : AppCompatActivity() {
             if (email.isNotEmpty() && password.isNotEmpty()){
                 if (email == semail && password == spassword){
                     editor.putBoolean("issigned",true)
+                    editor.apply()
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     finish()
