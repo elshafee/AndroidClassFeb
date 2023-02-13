@@ -15,6 +15,12 @@
         android:theme="@style/Theme.Androiden"
         tools:targetApi="33">
         <activity
+            android:name=".todolistapi.ui.TodoListApiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".shoppingitemlist.ui.ShoppingItemListActivity"
+            android:exported="false" />
+        <activity
             android:name=".courotine.KotlinCourotineExample"
             android:exported="false" />
         <activity

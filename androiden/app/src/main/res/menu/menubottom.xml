@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/TodoListApp"
+        android:title="TodoList app"
+        android:icon="@drawable/todolist"
+
+        />
+
+    <item
+        android:id="@+id/ourEvent"
+        android:title="Our Events"
+        android:icon="@drawable/ourevents"
+        />
+    <item
+        android:id="@+id/myEmail"
+        android:title="My Email"
+        android:icon="@drawable/email"
+        />
+
+
+    <item
+        android:id="@+id/todoListApi"
+        android:title="TodoList Api App"
+        android:icon="@drawable/todolist"
+        />
+
+</menu>

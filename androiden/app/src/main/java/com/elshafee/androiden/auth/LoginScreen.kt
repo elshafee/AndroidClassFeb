@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.elshafee.androiden.HomeScreen
 import com.elshafee.androiden.MainActivity
 import com.elshafee.androiden.R
 import com.elshafee.androiden.databinding.ActivityLoginScreenBinding
@@ -28,7 +29,7 @@ class LoginScreen : AppCompatActivity() {
                 if (email == semail && password == spassword){
                     editor.putBoolean("issigned",true)
                     editor.apply()
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, HomeScreen::class.java)
                     startActivity(intent)
                     finish()
                 }else{

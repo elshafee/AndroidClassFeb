@@ -9,6 +9,7 @@ import com.elshafee.androiden.MainActivity
 import com.elshafee.androiden.auth.LoginScreen
 import com.elshafee.androiden.databinding.ActivitySplashScreenBinding
 import com.elshafee.androiden.auth.todlistapp.TodoListActivity
+import com.elshafee.androiden.shoppingitemlist.ui.ShoppingItemListActivity
 
 class SplashScreen : AppCompatActivity() {
     lateinit var binding:ActivitySplashScreenBinding

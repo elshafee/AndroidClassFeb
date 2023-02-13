@@ -9,19 +9,35 @@
 
         />
     <item
+        android:id="@+id/wodgets"
+        android:title="Widgets"
+        android:icon="@drawable/todolist"
+
+        />
+    <item
         android:id="@+id/ourEvent"
         android:title="Our Events"
         android:icon="@drawable/ourevents"
         />
     <item
         android:id="@+id/myEmail"
-        android:title="My Email"
-        android:icon="@drawable/email"
+        android:title="Notification"
+        android:icon="@drawable/notification"
         />
     <item
         android:id="@+id/courotineExaple"
         android:title="Coroutine Example"
-        android:icon="@drawable/logout"
+        android:icon="@drawable/example"
+        />
+    <item
+        android:id="@+id/shoppingItemsApp"
+        android:title="Shopping Items"
+        android:icon="@drawable/shopping"
+        />
+    <item
+        android:id="@+id/todoListApi"
+        android:title="TodoList Api App"
+        android:icon="@drawable/todolist"
         />
     <item
         android:id="@+id/logout"

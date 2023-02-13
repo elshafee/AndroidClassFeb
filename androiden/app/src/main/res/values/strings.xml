@@ -16,4 +16,9 @@
     <string name="close">close</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">ADD</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_item">ADD ITEM</string>
+    <string name="item_amount">ITEM AMOUNT</string>
+    <string name="item_name">ITEM NAME</string>
 </resources>

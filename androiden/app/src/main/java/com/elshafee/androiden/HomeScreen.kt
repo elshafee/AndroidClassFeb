@@ -10,6 +10,8 @@ import androidx.fragment.app.Fragment
 import com.elshafee.androiden.auth.todlistapp.TodoListActivity
 import com.elshafee.androiden.courotine.KotlinCourotineExample
 import com.elshafee.androiden.notifications.NotificationExample
+import com.elshafee.androiden.shoppingitemlist.ui.ShoppingItemListActivity
+import com.elshafee.androiden.todolistapi.ui.TodoListApiActivity
 import com.elshafee.androiden.ui.MyEmail
 import com.elshafee.androiden.ui.OurEvents
 import com.elshafee.androiden.ui.SplashScreen
@@ -48,6 +50,18 @@ class HomeScreen : AppCompatActivity() {
                 }
                 R.id.ourEvent -> {
                     setCurrentFragment(ourEvent)
+                }
+                R.id.wodgets ->{
+                    val intent = Intent(this,MainActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.shoppingItemsApp ->{
+                    val intent = Intent(this,ShoppingItemListActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.todoListApi ->{
+                    val intent = Intent(this,TodoListApiActivity::class.java)
+                    startActivity(intent)
                 }
                 R.id.courotineExaple -> {
                     val intent = Intent(this, KotlinCourotineExample::class.java)
