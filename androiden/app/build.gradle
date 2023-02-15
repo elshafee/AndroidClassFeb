@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-parcelize'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.gms.google-services'
 }
 apply plugin: "kotlin-kapt"
 apply plugin: "kotlin-kapt"
@@ -81,6 +82,16 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
     implementation 'com.google.android.gms:play-services-maps:18.0.2'
+
+    //FIREBASE
+    implementation platform('com.google.firebase:firebase-bom:29.1.0')//Firebase core
+    implementation 'com.google.firebase:firebase-analytics-ktx'//Analytics
+    implementation 'com.google.firebase:firebase-auth-ktx' // Authentication
+    implementation 'com.google.android.gms:play-services-auth:20.4.1' //GOOGLE SIGN IN
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.4.3' // FireStore
+    implementation 'com.google.firebase:firebase-storage-ktx:20.1.0' // Storage
+    implementation 'com.google.firebase:firebase-messaging:23.1.1' //FCM, Firebase Cloud Messaging
+
 
 
 }

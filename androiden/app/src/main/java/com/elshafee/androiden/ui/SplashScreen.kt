@@ -8,21 +8,25 @@ import com.elshafee.androiden.HomeScreen
 import com.elshafee.androiden.MainActivity
 import com.elshafee.androiden.auth.LoginScreen
 import com.elshafee.androiden.databinding.ActivitySplashScreenBinding
-import com.elshafee.androiden.auth.todlistapp.TodoListActivity
+import com.elshafee.androiden.todlistapp.TodoListActivity
 import com.elshafee.androiden.shoppingitemlist.ui.ShoppingItemListActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class SplashScreen : AppCompatActivity() {
     lateinit var binding:ActivitySplashScreenBinding
+    lateinit var auth:FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        auth = FirebaseAuth.getInstance()
         supportActionBar?.hide()
         val sharedPrefrence = getSharedPreferences("authData",0)
         val isSigned:Boolean = sharedPrefrence.getBoolean("issigned",false)
+        val currentUser = auth.currentUser
         Handler().postDelayed({
 
-            if (isSigned){
+            if (currentUser !=null){
                 val intent = Intent(this, HomeScreen::class.java)
                 startActivity(intent)
                 finish()

@@ -36,7 +36,7 @@
             android:name=".HomeScreen"
             android:exported="false" />
         <activity
-            android:name=".auth.todlistapp.TodoListActivity"
+            android:name=".todlistapp.TodoListActivity"
             android:exported="false" />
         <activity
             android:name=".auth.SignUpScreen"

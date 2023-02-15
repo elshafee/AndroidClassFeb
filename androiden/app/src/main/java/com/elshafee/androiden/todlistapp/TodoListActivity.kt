@@ -1,4 +1,4 @@
-package com.elshafee.androiden.auth.todlistapp
+package com.elshafee.androiden.todlistapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.elshafee.androiden.auth.todlistapp
+package com.elshafee.androiden.todlistapp
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

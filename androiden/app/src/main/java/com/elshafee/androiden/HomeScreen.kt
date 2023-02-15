@@ -7,7 +7,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
-import com.elshafee.androiden.auth.todlistapp.TodoListActivity
+import com.elshafee.androiden.todlistapp.TodoListActivity
 import com.elshafee.androiden.breakingbadapp.ui.BreakingBadActivity
 import com.elshafee.androiden.courotine.KotlinCourotineExample
 import com.elshafee.androiden.notifications.NotificationExample
@@ -18,13 +18,17 @@ import com.elshafee.androiden.ui.OurEvents
 import com.elshafee.androiden.ui.SplashScreen
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.ktx.Firebase
 
 class HomeScreen : AppCompatActivity() {
     lateinit var toggle: ActionBarDrawerToggle
+    lateinit var auth:FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        auth = FirebaseAuth.getInstance()
 
         val drawer = findViewById<DrawerLayout>(R.id.drawerLayout)
         val navView = findViewById<NavigationView>(R.id.navView)
@@ -73,8 +77,9 @@ class HomeScreen : AppCompatActivity() {
                     startActivity(intent)
                 }
                 R.id.logout -> {
-                    editor.putBoolean("issigned", false)
-                    editor.apply()
+                    auth.signOut()
+//                    editor.putBoolean("issigned", false)
+//                    editor.apply()
                     val intent = Intent(this, SplashScreen::class.java)
                     startActivity(intent)
                 }
