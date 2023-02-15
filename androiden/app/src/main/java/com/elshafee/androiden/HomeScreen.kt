@@ -8,6 +8,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.elshafee.androiden.auth.todlistapp.TodoListActivity
+import com.elshafee.androiden.breakingbadapp.ui.BreakingBadActivity
 import com.elshafee.androiden.courotine.KotlinCourotineExample
 import com.elshafee.androiden.notifications.NotificationExample
 import com.elshafee.androiden.shoppingitemlist.ui.ShoppingItemListActivity
@@ -65,6 +66,10 @@ class HomeScreen : AppCompatActivity() {
                 }
                 R.id.courotineExaple -> {
                     val intent = Intent(this, KotlinCourotineExample::class.java)
+                    startActivity(intent)
+                }
+                R.id.BreakingBad -> {
+                    val intent = Intent(this, BreakingBadActivity::class.java)
                     startActivity(intent)
                 }
                 R.id.logout -> {

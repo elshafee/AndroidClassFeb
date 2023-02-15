@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application xmlns:tools="http://schemas.android.com/tools"
+        android:name=".breakingbadapp.BreakingBadApllication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,6 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androiden"
         tools:targetApi="33">
+
+
+        <activity
+            android:name=".breakingbadapp.ui.BreakingBadActivity"
+            android:exported="false" />
         <activity
             android:name=".todolistapi.ui.TodoListApiActivity"
             android:exported="false" />

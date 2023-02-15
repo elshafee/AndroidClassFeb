@@ -40,6 +40,11 @@
         android:icon="@drawable/todolist"
         />
     <item
+        android:id="@+id/BreakingBad"
+        android:title="Breaking Bad Api"
+        android:icon="@drawable/breaking"
+        />
+    <item
         android:id="@+id/logout"
         android:title="SignOut"
         android:icon="@drawable/logout"
