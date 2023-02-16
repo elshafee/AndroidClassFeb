@@ -45,6 +45,16 @@
         android:icon="@drawable/breaking"
         />
     <item
+        android:id="@+id/FireStore"
+        android:title="FireStore App"
+        android:icon="@drawable/data"
+        />
+    <item
+        android:id="@+id/FireStorage"
+        android:title="FireStorage App"
+        android:icon="@drawable/storage"
+        />
+    <item
         android:id="@+id/logout"
         android:title="SignOut"
         android:icon="@drawable/logout"

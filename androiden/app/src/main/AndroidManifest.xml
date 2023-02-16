@@ -15,8 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androiden"
         tools:targetApi="33">
-
-
+        <activity
+            android:name=".fireStorage.ui.ClothesApp"
+            android:exported="false" />
+        <activity
+            android:name=".firestoreapp.ui.FireStoreApp"
+            android:exported="false" />
         <activity
             android:name=".breakingbadapp.ui.BreakingBadActivity"
             android:exported="false" />

@@ -1,17 +1,19 @@
 package com.elshafee.androiden
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
-import com.elshafee.androiden.todlistapp.TodoListActivity
 import com.elshafee.androiden.breakingbadapp.ui.BreakingBadActivity
 import com.elshafee.androiden.courotine.KotlinCourotineExample
+import com.elshafee.androiden.fireStorage.ui.ClothesApp
+import com.elshafee.androiden.firestoreapp.ui.FireStoreApp
 import com.elshafee.androiden.notifications.NotificationExample
 import com.elshafee.androiden.shoppingitemlist.ui.ShoppingItemListActivity
+import com.elshafee.androiden.todlistapp.TodoListActivity
 import com.elshafee.androiden.todolistapi.ui.TodoListApiActivity
 import com.elshafee.androiden.ui.MyEmail
 import com.elshafee.androiden.ui.OurEvents
@@ -19,11 +21,10 @@ import com.elshafee.androiden.ui.SplashScreen
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
 
 class HomeScreen : AppCompatActivity() {
     lateinit var toggle: ActionBarDrawerToggle
-    lateinit var auth:FirebaseAuth
+    lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
@@ -56,16 +57,16 @@ class HomeScreen : AppCompatActivity() {
                 R.id.ourEvent -> {
                     setCurrentFragment(ourEvent)
                 }
-                R.id.wodgets ->{
-                    val intent = Intent(this,MainActivity::class.java)
+                R.id.wodgets -> {
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 }
-                R.id.shoppingItemsApp ->{
-                    val intent = Intent(this,ShoppingItemListActivity::class.java)
+                R.id.shoppingItemsApp -> {
+                    val intent = Intent(this, ShoppingItemListActivity::class.java)
                     startActivity(intent)
                 }
-                R.id.todoListApi ->{
-                    val intent = Intent(this,TodoListApiActivity::class.java)
+                R.id.todoListApi -> {
+                    val intent = Intent(this, TodoListApiActivity::class.java)
                     startActivity(intent)
                 }
                 R.id.courotineExaple -> {
@@ -74,6 +75,14 @@ class HomeScreen : AppCompatActivity() {
                 }
                 R.id.BreakingBad -> {
                     val intent = Intent(this, BreakingBadActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.FireStore -> {
+                    val intent = Intent(this, FireStoreApp::class.java)
+                    startActivity(intent)
+                }
+                R.id.FireStorage -> {
+                    val intent = Intent(this, ClothesApp::class.java)
                     startActivity(intent)
                 }
                 R.id.logout -> {
